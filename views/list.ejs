@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <% for(var i=0; i < data.length; i++) { %>
+        <p>
+        <h1>
+            <%=data[i]['id']%>. <%=data[i]['title']%>
+        </h1>
+        <%=data[i]['writer']%>
+            <br>
+            <button id="target">target button</button>
+            <hr>
+            </p>
+            <%= %>
+                <% } %>
+
+                    <table>
+                        <tr>
+                            <td>No</td>
+                            <td>Writer</td>
+                            <td>Title</td>
+                        </tr>
+                        <% for(let i=0; i<data.length; i++){%>
+                            <tr>
+                                <td>
+                                    <%=data[i]['id']%>
+                                </td>
+                                <td>
+                                    <%=data[i]['writer']%>
+                                </td>
+                                <td>
+                                    <%=data[i]['title']%>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+</body>
+<script src="/js/index.js"></script>
+
+</html>

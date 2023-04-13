@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/js/styles.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/public/js/manifest.json">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/public/img/surable_logo.png">
+        <h2>대표이사실</h2>
+    </div>
+    <header id="home">
+
+        <div class="hero">
+            <div class="overlay"></div>
+            <h1 id="title">재 실 중</h1>
+        </div>
+    </header>
+    <div class="sticky-wrapper">
+        <nav>
+            <ul>
+                <li><a id="stay" onclick="handleStay()">재실</a></li>
+                <li><a id="outside" onclick="handleOut()">외출</a></li>
+                <li><a id="empty" onclick="handleAbsence()">부재</a></li>
+                <li><a id="vacation" onclick="handleVacation()">휴가</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/public/js/index.js"></script>
