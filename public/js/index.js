@@ -4,7 +4,7 @@
   const outside = document.getElementById("outside");
   const empty = document.getElementById("empty");
   const vacation = document.getElementById("vacation");
-
+handleStay();
   function handleStay(){
         title.innerText = '재 실 중';
         stay.style.color = "#fff";
